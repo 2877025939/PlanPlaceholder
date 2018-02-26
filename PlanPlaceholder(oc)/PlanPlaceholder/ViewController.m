@@ -10,11 +10,11 @@
 #import "SecondViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *dataArray;
 //测试三种数据源方式
-@property (nonatomic,assign)NSInteger i;
+@property (nonatomic,assign) NSInteger i;
 //记录加载总计数据
-@property (nonatomic,assign)NSInteger totoalCount;
+@property (nonatomic,assign) NSInteger totoalCount;
 
 @end
 

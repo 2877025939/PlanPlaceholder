@@ -19,18 +19,18 @@
 @property(nonatomic,assign) BOOL isDisplayEmptyData;
 
 //空数据页面title
-@property(nonatomic,strong) NSString *emptyDataTitle;
+@property(nonatomic,copy) NSString *emptyDataTitle;
 
 //空数据页面的图片
-@property(nonatomic,strong) NSString *emptyDataImage;
+@property(nonatomic,copy) NSString *emptyDataImage;
 
 //空数据页面详情title
-@property(nonatomic,strong) NSString *emptyDataDetail;
+@property(nonatomic,copy) NSString *emptyDataDetail;
 
 //占位按钮标题、图片二选一
-@property(nonatomic,strong) NSString *buttonTitle;
+@property(nonatomic,copy) NSString *buttonTitle;
 
-@property(nonatomic,strong) NSString *buttonImageName;
+@property(nonatomic,copy) NSString *buttonImageName;
 
 @end
 
@@ -69,8 +69,8 @@
         self.emptyDataTitle = @"网络环境异常！";
         self.buttonTitle = @"点击刷新";
         
-    }else{
-        
+    }else
+    {
          self.isDisplayEmptyData = NO;
          self.tableView.mj_footer.hidden = NO;
     }
